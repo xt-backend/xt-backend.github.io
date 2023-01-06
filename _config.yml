@@ -79,6 +79,7 @@ theme_mode:   # [light|dark]
 #
 # e.g. 'https://cdn.com'
 # the avatar on sidebar, support local or CORS resources
+img_cdn: 'https://cdn.com'
 avatar: 'https://static.wanted.co.kr/images/company/23697/iyabvj2hlasitoee__1080_790.jpg'
 
 # boolean type, the global switch for ToC in posts.
