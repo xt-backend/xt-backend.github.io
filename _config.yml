@@ -78,7 +78,6 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://xt-backend.github.io'
 # the avatar on sidebar, support local or CORS resources
 avatar: 'https://static.wanted.co.kr/images/company/23697/iyabvj2hlasitoee__1080_790.jpg'
 
