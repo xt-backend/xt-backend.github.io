@@ -1,8 +1,8 @@
 ---
-title: Gradle 관련자료
-date: 2023-01-30 15:21:00 +0900
-categories: [xt, Dev, Gradle]
-tags: [xt, gradle]
+title: Kubernetes 관련자료
+date: 2023-05-10 15:21:00 +0900
+categories: [xt, Dev, Kubernetes]
+tags: [xt, Kubernetes]
 ---
 
 # Index
