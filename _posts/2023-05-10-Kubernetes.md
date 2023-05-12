@@ -25,12 +25,16 @@ tags: [xt, Kubernetes]
 
 ## 왜 사용하나?
 * 전통적인 환경에서의 배포 > 가상환경에서의 배포 > 다시 컨테이너로의 배포
+* * ![kubernetes-1.png](/assets/img/posts/gradle/kubernetes-1.png)
 * 전통적인 환경에서의 배포
   * 초기 개발은 물리적 서버에서 애플리케이션 실행
+  * ![kubernetes-1.png](/assets/img/posts/gradle/kubernetes-1.png)
 * 가상 환경에서의 배포
   * 애플리케이션간의 격리, 상호간의 보안 환경 유지 가능
+  * ![kubernetes-1.png](/assets/img/posts/gradle/kubernetes-1.png)
 * 컨테이너로의 배포
   * 가상머신과 유사하지만, 자체 파일 시스템, CPU 공유, 메모리, 프로세스 공간 등이 있다. 기본 인프라에서 분리되어서 클라우드 및 OS 전반에 걸쳐 이식 가능
+  * ![kubernetes-1.png](/assets/img/posts/gradle/kubernetes-1.png)
   
 * 
 
