@@ -45,18 +45,18 @@ tags: [xt, ElasticSearch]
       - Elasticsearch를 구성하는 하나의 단위 프로세스를 의미합니다.
       - 그 역할에 따라 Master-eligible, Data, Ingest, Tribe 노드로 구분할 수 있습니다.
       - 아래는 각 노드들에 대한 설명인데, 제가 Elasticsearch에 대한 깊이가 없어서 공식 문서의 설명들을 정리만 해보았습니다.
-    - master-eligible node ( 링크 )
+    - master-eligible node
       - 클러스터를 제어하는 마스터로 선택할 수 있는 노드를 말합니다.
       - 여기서 master 노드가 하는 역할은 다음과 같습니다.
         - 인덱스 생성, 삭제
         - 클러스더 노드들의 추적, 관리
         - 데이터 입력 시 어느 샤드에 할당할 것인지
-    - Data node ( 링크 )
+    - Data node
       - 데이터와 관련된 CRUD 작업과 관련있는 노드입니다.
       - 이 노드는 CPU, 메모리 등 자원을 많이 소모하므로 모니터링이 필요하며, master 노드와 분리되는 것이 좋습니다.
-    - Ingest node ( 링크 )
+    - Ingest node
       - 데이터를 변환하는 등 사전 처리 파이프라인을 실행하는 역할을 합니다.
-    - Coordination only node ( 링크 )
+    - Coordination only node
       - data node와 master-eligible node의 일을 대신하는 이 노드는 대규모 클러스터에서 큰 이점이 있습니다.
       - 즉 로드밸런서와 비슷한 역할을 한다고 보시면 됩니다.
 
