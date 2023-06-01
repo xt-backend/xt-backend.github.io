@@ -8,6 +8,7 @@ tags: [xt, ElasticSearch]
 # Index
 --- 
 ### ElasticSearch란?
+### Elasticsearch 아키텍쳐 / 용어 정리
 ### Elasticsearch는 어디에 사용되나요?
 ### Elasticsearch는 어떻게 작동하나요?
 ### Elasticsearch 인덱스는 무엇인가요?
@@ -16,9 +17,9 @@ tags: [xt, ElasticSearch]
 
 --- 
 
-### Elasticsearch는 어디에 사용되나요?
+### ElasticSearch란?
   - Elasticsearch는 Apache Lucene( 아파치 루씬 ) 기반의 Java 오픈소스 분산 검색 엔진입니다. Elasticsearch를 통해 루씬 라이브러리를 단독으로 사용할 수 있게 되었으며, 방대한 양의 데이터를 신속하게, 거의 실시간( NRT, Near Real Time )으로 저장, 검색, 분석할 수 있습니다.
-  - Elasticsearch는 검색을 위해 단독으로 사용되기도 하며, ELK( Elasticsearch / Logstatsh / Kibana )스택으로 사용되기도 합니다.
+  - Elasticsearch는 검색을 위해 단독으로 사용되기도 하며, ELK( Elasticsearch / Logstash / Kibana )스택으로 사용되기도 합니다.
   - ELK 스택이란 다음과 같습니다.
 
     - Logstash
@@ -26,8 +27,39 @@ tags: [xt, ElasticSearch]
     - Elasticsearch 
       - Logstash로부터 받은 데이터를 검색 및 집계를 하여 필요한 관심 있는 정보를 획득
     - Kibana
-      -  Elasticsearch의 빠른 검색을 통해 데이터를 시각화 및 모니터링
+      - Elasticsearch의 빠른 검색을 통해 데이터를 시각화 및 모니터링
 * ![elasticsearch-1.png](/assets/img/posts/elasticsearch/elasticsearch-1.png)
+### Elasticsearch 아키텍쳐 / 용어 정리
+
+  - Elasticsearch에서 사용하는 대부분의 개념은 RDBMS에도 존재하는 개념들입니다. 아래의 사진은 Elasticsearch Architecture이며, 앞으로 설명할 용어들의 구조입니다.
+
+    - 클러스터( cluseter )
+
+      - 클러스터란 Elasticsearch에서 가장 큰 시스템 단위를 의미하며, 최소 하나 이상의 노드로 이루어진 노드들의 집합입니다.
+    
+      - 서로 다른 클러스터는 데이터의 접근, 교환을 할 수 없는 독립적인 시스템으로 유지되며,
+    
+      - 여러 대의 서버가 하나의 클러스터를 구성할 수 있고, 한 서버에 여러 개의 클러스터가 존재할수도 있습니다.
+      
+    - 노드( node )
+      - Elasticsearch를 구성하는 하나의 단위 프로세스를 의미합니다.
+      - 그 역할에 따라 Master-eligible, Data, Ingest, Tribe 노드로 구분할 수 있습니다.
+      - 아래는 각 노드들에 대한 설명인데, 제가 Elasticsearch에 대한 깊이가 없어서 공식 문서의 설명들을 정리만 해보았습니다.
+    - master-eligible node ( 링크 )
+      - 클러스터를 제어하는 마스터로 선택할 수 있는 노드를 말합니다.
+      - 여기서 master 노드가 하는 역할은 다음과 같습니다.
+        - 인덱스 생성, 삭제
+        - 클러스더 노드들의 추적, 관리
+        - 데이터 입력 시 어느 샤드에 할당할 것인지
+    - Data node ( 링크 )
+      - 데이터와 관련된 CRUD 작업과 관련있는 노드입니다.
+      - 이 노드는 CPU, 메모리 등 자원을 많이 소모하므로 모니터링이 필요하며, master 노드와 분리되는 것이 좋습니다.
+    - Ingest node ( 링크 )
+      - 데이터를 변환하는 등 사전 처리 파이프라인을 실행하는 역할을 합니다.
+    - Coordination only node ( 링크 )
+      - data node와 master-eligible node의 일을 대신하는 이 노드는 대규모 클러스터에서 큰 이점이 있습니다.
+      - 즉 로드밸런서와 비슷한 역할을 한다고 보시면 됩니다.
+
 
 ### Elasticsearch는 어디에 사용되나요?
   - Elasticsearch의 속도와 확장성, 그리고 수많은 종류의 콘텐츠를 색인할 수 있는 능력은 다음과 같은 다양한 사용 사례에 이용될 수 있다는 뜻입니다.
@@ -67,6 +99,9 @@ Elasticsearch는 역 인덱스라고 하는 데이터 구조를 사용하는데,
 
 
 
+### 참고
+[Elastic Search 기본 개념 잡기](https://github.com/exo-archives/exo-es-search)
+[Elastic Search는 무엇인가요?](https://www.elastic.co/kr/what-is/elasticsearch)
 
 
 
