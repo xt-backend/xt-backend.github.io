@@ -23,7 +23,7 @@ tags: [xt, Kubernetes]
 * 쿠버네티스는 컨테이너 오케스트레이션 도구의 일종
   * 컨테이너 오케스트레이션이란 시스템 전체를 통괄, 여러 개의 컨테이너를 관리하는 일을 맡았다. 
 * 오케스트레이션
-  * <img alt="kubernetes-5.png" src="/assets/img/posts/kubernetes/kubernetes-5.png"/>
+  * ![kubernetes-5.png](/assets/img/posts/kubernetes/kubernetes-5.png)
 
 ## 왜 사용하나?
 
