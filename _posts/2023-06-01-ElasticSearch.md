@@ -18,7 +18,7 @@ tags: [xt, ElasticSearch]
 --- 
 
 ### ElasticSearch란?
-  - Elasticsearch는 Apache Lucene( 아파치 루씬 ) 기반의 Java 오픈소스 분산 검색 엔진입니다. Elasticsearch를 통해 루씬 라이브러리를 단독으로 사용할 수 있게 되었으며, 방대한 양의 데이터를 신속하게, 거의 실시간( NRT, Near Real Time )으로 저장, 검색, 분석할 수 있습니다.
+  - 정의 : Elasticsearch는 Apache Lucene( 아파치 루씬 ) 기반의 Java 오픈소스 분산 검색 엔진입니다. Elasticsearch를 통해 루씬 라이브러리를 단독으로 사용할 수 있게 되었으며, 방대한 양의 데이터를 신속하게, 거의 실시간( NRT, Near Real Time )으로 저장, 검색, 분석할 수 있습니다.
   - Elasticsearch는 검색을 위해 단독으로 사용되기도 하며, ELK( Elasticsearch / Logstash / Kibana )스택으로 사용되기도 합니다.
   - ELK 스택이란 다음과 같습니다.
 
@@ -33,7 +33,7 @@ tags: [xt, ElasticSearch]
 
   - Elasticsearch에서 사용하는 대부분의 개념은 RDBMS에도 존재하는 개념들입니다. 아래의 사진은 Elasticsearch Architecture이며, 앞으로 설명할 용어들의 구조입니다.
 
-    - 클러스터( cluseter )
+    - 클러스터( cluster )
 
       - 클러스터란 Elasticsearch에서 가장 큰 시스템 단위를 의미하며, 최소 하나 이상의 노드로 이루어진 노드들의 집합입니다.
     
