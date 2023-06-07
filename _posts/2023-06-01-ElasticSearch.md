@@ -7,14 +7,14 @@ tags: [xt, ElasticSearch]
 
 # Index
 --- 
-### Elastic Search란?
-### Elastic Search 아키텍쳐 / 용어 정리
-### Elastic Search는 어떻게 작동하나요?
-### Elastic Search를 사용하는 이유는 무엇인가요?
-### Elastic Search와 RDBMS
-### Elastic Search는 어디에 사용되나요?
-### 역색인
-### Elastic Search의 특징과 장단점
+## Elastic Search란?
+## Elastic Search 아키텍쳐 / 용어 정리
+## Elastic Search는 어떻게 작동하나요?
+## Elastic Search를 사용하는 이유는 무엇인가요?
+## Elastic Search와 RDBMS
+## Elastic Search는 어디에 사용되나요?
+## 역색인
+## Elastic Search의 특징과 장단점
 --- 
 
 ### ElasticSearch란?
@@ -29,7 +29,6 @@ tags: [xt, ElasticSearch]
     - Kibana
       - Elasticsearch의 빠른 검색을 통해 데이터를 시각화 및 모니터링
       ![elasticsearch-1.png](/assets/img/posts/elasticsearch/elasticsearch-1.png)
-    
 ### Elasticsearch 아키텍쳐 / 용어 정리
   - Elasticsearch에서 사용하는 대부분의 개념은 RDBMS에도 존재하는 개념들입니다. 아래의 사진은 Elasticsearch Architecture이며, 앞으로 설명할 용어들의 구조입니다.
 
@@ -126,9 +125,9 @@ tags: [xt, ElasticSearch]
 
 
 ### 참고
-[Elastic Search 기본 개념 잡기](https://github.com/exo-archives/exo-es-search)
-[Elastic Search는 무엇인가요?](https://www.elastic.co/kr/what-is/elasticsearch)
-[Elastic Search 기본 개념과 특징](https://jaemunbro.medium.com/elastic-search-%EA%B8%B0%EC%B4%88-%EC%8A%A4%ED%84%B0%EB%94%94-ff01870094f0)
+- [Elastic Search 기본 개념 잡기](https://github.com/exo-archives/exo-es-search)
+- [Elastic Search는 무엇인가요?](https://www.elastic.co/kr/what-is/elasticsearch)
+- [Elastic Search 기본 개념과 특징](https://jaemunbro.medium.com/elastic-search-%EA%B8%B0%EC%B4%88-%EC%8A%A4%ED%84%B0%EB%94%94-ff01870094f0)
 
 
 
