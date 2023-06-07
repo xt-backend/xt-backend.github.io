@@ -28,7 +28,8 @@ tags: [xt, ElasticSearch]
       - Logstash로부터 받은 데이터를 검색 및 집계를 하여 필요한 관심 있는 정보를 획득
     - Kibana
       - Elasticsearch의 빠른 검색을 통해 데이터를 시각화 및 모니터링
-* ![elasticsearch-1.png](/assets/img/posts/elasticsearch/elasticsearch-1.png)
+    * ![elasticsearch-1.png](/assets/img/posts/elasticsearch/elasticsearch-1.png)
+    
 ### Elasticsearch 아키텍쳐 / 용어 정리
 
   - Elasticsearch에서 사용하는 대부분의 개념은 RDBMS에도 존재하는 개념들입니다. 아래의 사진은 Elasticsearch Architecture이며, 앞으로 설명할 용어들의 구조입니다.
