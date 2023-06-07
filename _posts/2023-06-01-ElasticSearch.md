@@ -31,7 +31,6 @@ tags: [xt, ElasticSearch]
       ![elasticsearch-1.png](/assets/img/posts/elasticsearch/elasticsearch-1.png)
     
 ### Elasticsearch 아키텍쳐 / 용어 정리
-
   - Elasticsearch에서 사용하는 대부분의 개념은 RDBMS에도 존재하는 개념들입니다. 아래의 사진은 Elasticsearch Architecture이며, 앞으로 설명할 용어들의 구조입니다.
 
     - 클러스터( cluster )
